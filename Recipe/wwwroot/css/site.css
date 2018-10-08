@@ -1,4 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
     padding-top: 50px;
@@ -34,4 +34,44 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #b1a8a8, gainsboro);
+    border-bottom: none;
+}
+
+.navBarStyle {
+    background-color: gainsboro;
+}
+
+.navbar-brand {
+    color: #808080;
+}
+
+    .navbar-brand:hover {
+        color: darkred;
+        transform: scale(1.05);
+    }
+
+.navbar-nav > li > a {
+    color: #808080;
+}
+
+.navbar-nav :hover {
+    color: darkred;
+}
+
+.sidebar {
+    position: absolute;
+    background: gainsboro;
+    margin-left: 0;
+    width: 150px;
+    height: 95%;
+    background-image: linear-gradient(to bottom, gainsboro, #b1a8a8);
+}
+
+.sidebarLink {
+    margin-left: 20px;
+    color: red;
 }
