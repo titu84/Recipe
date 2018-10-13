@@ -1,5 +1,6 @@
-﻿<div class="sidebar">
-    <div><a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Index">Home</a></div>
-    <div><a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="About">About</a></div>
-    <div><a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></div>
+﻿
+<div class="sidebar @ViewBag.HidenElement" id="sidebar">    
+    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Index"><div class="sidebarDiv">Home</div></a>
+    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="About"><div class="sidebarDiv">About</div></a>
+    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Contact"><div class="sidebarDiv">Contact</div></a>
 </div>

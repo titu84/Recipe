@@ -1,77 +1,92 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 50px 15px 0 11em;  
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+.bodyContentSmall {
+    padding: 50px 10px 0 30px;    
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
-
-.navbar {
+.navigation {
     background-image: linear-gradient(to bottom, #b1a8a8, gainsboro);
-    border-bottom: none;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    display: flex;
 }
 
-.navBarStyle {
-    background-color: gainsboro;
+.navElement {
+    padding: 7px 0px 0px 10px;
+    width: 200px;
 }
 
-.navbar-brand {
-    color: #808080;
-}
-
-    .navbar-brand:hover {
-        color: darkred;
+    .navElement:hover {         
         transform: scale(1.05);
+        text-decoration: none;       
     }
 
-.navbar-nav > li > a {
-    color: #808080;
+a > .navElement {
+    text-decoration: none;
+    color: #756d6d;
 }
 
-.navbar-nav :hover {
-    color: darkred;
+a:hover {
+    color: #756d6d;
+    text-decoration: none;
 }
 
 .sidebar {
-    position: absolute;
+    padding-top: 1px;
+    position: fixed;
     background: gainsboro;
-    margin-left: 0;
+    margin: 40px 0px 0px 0px;
     width: 150px;
-    height: 95%;
+    height: 100%;
     background-image: linear-gradient(to bottom, gainsboro, #b1a8a8);
 }
-
-.sidebarLink {
-    margin-left: 20px;
-    color: red;
+/*@media (max-width: 767px) {   
+    .sidebarDiv {
+        padding: 10px 5px 10px 0px;
+        padding-left: 5px;
+    }
 }
+@media (min-width: 768px) {
+    .sidebarDiv {
+        padding: 10px 10px 10px 0px;
+        padding-left: 25px;
+    }
+}*/
+.sidebarLink {
+    color: #756d6d;
+}
+
+    .sidebarLink:hover {        
+        text-decoration: none;
+    }
+
+.sidebarDiv {
+    background-image: linear-gradient(to bottom, gainsboro, #b1a8a8);
+    text-align: left;
+    padding: 10px 10px 10px 35px;
+}
+
+    .sidebarDiv:hover {
+        transform: scale(1.05);
+        border-right: solid 2px red;
+    }
+
+.hidenElement {    
+    display: none;
+}
+
+#switchSidebar {
+    text-align: center;
+    padding: 10px 10px 10px 5px;
+    width: 50px;
+}
+
+    #switchSidebar:hover {
+        z-index: 2000;
+        transform: scale(1.05);
+        border-bottom: solid 2px red;
+    }
