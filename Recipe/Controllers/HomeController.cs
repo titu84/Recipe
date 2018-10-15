@@ -39,5 +39,11 @@ namespace Recipe.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        static int i = 0;
+        public ContentResult X()
+        {
+            i++;
+            return Content("jest X" + i);
+        }
     }
 }

@@ -1,5 +1,7 @@
 ﻿
 <div class="navigation" id="nav">
     <div class="fa fa-angle-double-up" id="switchSidebar"></div>
-    <a asp-area="" asp-controller="Home" asp-action="Index"><div class="navElement">@MainResource.AppName</div> </a>
+    <div id="mainNavElement">
+        <a asp-area="" asp-controller="Home" asp-action="Index"><div class="navElement">@MainResource.AppName</div></a>
+    </div>
 </div>
