@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName" xml:space="preserve">
-    <value>Aplikacja dla Edyty</value>
+    <value>Aplikacja</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>KsApplications</value>
   </data>
 </root>

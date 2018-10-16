@@ -10,11 +10,23 @@ function ksAjax(method, url, callback, withCredentials) {
     xhttp.send();
 }
 (() => {     
-    window.addEventListener('load', function (event) {
+    document.onreadystatechange = function (e) {
+        if (document.readyState === 'complete') {
+            if (window.innerWidth < 767) {
+                toggleSidebar()
+            }
+        }
+    };
+    window.addEventListener('resize', function (event) {
         if (window.innerWidth < 767) {
-            toggleSidebar()              
+            
         }
     });
+    //window.addEventListener('load', function (event) {
+    //    if (window.innerWidth < 767) {
+    //        toggleSidebar()
+    //    }
+    //});
 let switchSidebar = document.querySelector("#switchSidebar");
 let sidebar = document.querySelector("#sidebar");
 let bodyContent = document.querySelector("#body-content");
@@ -30,10 +42,10 @@ window.addEventListener('touchend', function (event) {
 }, false);
 
 function handleGesture() {
-    if (touchstartX - touchendX > 100 && !sidebar.classList.contains("hidenElement")) {
+    if (touchstartX - touchendX > 100 && sidebar.classList.contains("hidenElement")) {
         toggleSidebar()
     }
-    else if (touchendX - touchstartX > 100 && sidebar.classList.contains("hidenElement")) {
+    else if (touchendX - touchstartX > 100 && !sidebar.classList.contains("hidenElement")) {
         toggleSidebar()
     }
     else

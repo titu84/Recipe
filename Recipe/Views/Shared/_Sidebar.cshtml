@@ -1,6 +1,17 @@
 ﻿
-<div class="sidebar @ViewBag.HidenElement" id="sidebar">    
+<div class="sidebar @ViewBag.HidenElement" id="sidebar">
     <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Index"><div class="sidebarDiv">Home</div></a>
     <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="About"><div class="sidebarDiv">About</div></a>
+    <div class="sidebarLink">
+        <div class="sidebarDiv sidebarParent">
+            <text>Rozwiń</text>
+            <span class="sidebarChildIcon"></span>
+            <div class="sidebarChildBag">
+                <a asp-area="" asp-controller="Home" asp-action="About"> <div class="sidebarDiv">Child 1</div></a>
+                <div class="sidebarDiv">Child 2</div>
+                <div class="sidebarDiv">Child 3</div>
+            </div>
+        </div>
+    </div>
     <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Contact"><div class="sidebarDiv">Contact</div></a>
 </div>

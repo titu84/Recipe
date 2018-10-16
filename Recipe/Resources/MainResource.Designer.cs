@@ -61,11 +61,20 @@ namespace Recipe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aplikacja dla Edyty.
+        ///   Looks up a localized string similar to Aplikacja.
         /// </summary>
         public static string AppName {
             get {
                 return ResourceManager.GetString("AppName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KsApplications.
+        /// </summary>
+        public static string Company {
+            get {
+                return ResourceManager.GetString("Company", resourceCulture);
             }
         }
     }
