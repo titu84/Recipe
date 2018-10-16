@@ -26,12 +26,7 @@
     <partial name="_CookieConsentPartial" />
     <partial name="_Sidebar" />
     <div id="body-content" class="container body-content">
-
-        @RenderBody()        
-        <footer>
-            <hr />
-            <p>&copy; @DateTime.Today.Year - @MainResource.Company</p>
-        </footer>
+        @RenderBody()   
     </div>
 
     <environment include="Development">
