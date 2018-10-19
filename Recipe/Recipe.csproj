@@ -17,6 +17,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MainResource.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\ViewResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ViewResource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +34,10 @@
     <EmbeddedResource Update="Resources\MainResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MainResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ViewResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

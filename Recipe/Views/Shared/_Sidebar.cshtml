@@ -1,19 +1,21 @@
 ﻿
 <div class="sidebar @ViewBag.HidenElement" id="sidebar">
-    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Index"><div class="sidebarDiv">Home</div></a>
-    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="About"><div class="sidebarDiv">About</div></a>
+    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Index"><div class="sidebarDiv">@MainResource.Home</div></a>
+    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="About"><div class="sidebarDiv">@MainResource.About</div></a>
+    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Contact"><div class="sidebarDiv">@MainResource.Contact</div></a>
     <div class="sidebarLink">
         <div class="sidebarDiv sidebarParent">
-            <text>Rozwiń</text>
+            <text>@MainResource.Admin</text>
             <span class="sidebarChildIcon"></span>
             <div class="sidebarChildBag">
-                <a asp-area="" asp-controller="Home" asp-action="About"> <div class="sidebarDiv">Child 1</div></a>
-                <div class="sidebarDiv">Child 2</div>
-                <div class="sidebarDiv">Child 3</div>
+                <a asp-area="" asp-controller="Home" asp-action="About">
+                    <div class="sidebarDiv">Child 1</div>
+                </a>
+                <a href="#"><div class="sidebarDiv">Child 2</div></a>
+                <a href="#"><div class="sidebarDiv">Child 3</div> </a>
             </div>
         </div>
-    </div>
-    <a class="sidebarLink" asp-area="" asp-controller="Home" asp-action="Contact"><div class="sidebarDiv">Contact</div></a>
+    </div>     
 </div>
 <footer>
     &copy; @DateTime.Today.Year - @MainResource.Company / @MainResource.AppName

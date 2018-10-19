@@ -6,19 +6,15 @@
     <title>@ViewData["Title"]</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/libs/bootstrap/css/bootstrap.min.css" />
+        @*<link rel="stylesheet" href="~/libs/bootstrap/css/bootstrap.min.css" />*@
         <link rel="stylesheet" href="~/libs/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/sidebar.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="~/libs/bootstrap/css/bootstrap.min.css" />
+        @*<link rel="stylesheet" href="~/libs/bootstrap/css/bootstrap.min.css" />*@
         <link rel="stylesheet" href="~/libs/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-        @*<link rel="stylesheet" href="~/libs/bootstrap/css/bootstrap.min.css"
-              asp-fallback-href="~/libs/bootstrap/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/libs/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="~/css/site.css" />*@
+        <link rel="stylesheet" href="~/css/min/site.min.css" asp-append-version="true" />         
     </environment>
 </head>
 <body>
@@ -31,13 +27,13 @@
 
     <environment include="Development">
         <script src="~/libs/jquery/jquery.min.js"></script>
-        <script src="~/libs/bootstrap/js/bootstrap.min.js"></script>
+       @* <script src="~/libs/bootstrap/js/bootstrap.min.js"></script>*@
         <script src="~/js/site.js"></script>
         <script src="~/js/ajax.js"></script>
     </environment>
     <environment exclude="Development">
         <script src="~/libs/jquery/jquery.min.js"></script>
-        <script src="~/libs/bootstrap/js/bootstrap.min.js"></script>
+       @* <script src="~/libs/bootstrap/js/bootstrap.min.js"></script>*@
         <script src="~/js/min/site.min.js" asp-append-version="true"></script>
     </environment>
 
