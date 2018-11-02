@@ -263,3 +263,4 @@ PublishProfiles
 /Recipe/wwwroot/js/bundle
 bundle
 min
+Recipe/wwwroot/libs/

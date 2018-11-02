@@ -46,8 +46,7 @@
 }
 
 .sidebarParent:hover .sidebarChildBag {
-    display: block;
-    margin-top: 0;     
+    display: block;         
 }
 
 @media (max-width: 767px) {
@@ -83,6 +82,7 @@
 
     .sidebarParent:hover .sidebarChildBag {
         margin-left: -30px;
+        margin-top: 10px;
     }
 }
 
